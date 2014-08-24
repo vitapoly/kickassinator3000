@@ -1,0 +1,6 @@
+.DS_Store
+xcuserdata
+.arc
+.arcconfig
+.internal/
+project.xcworkspace

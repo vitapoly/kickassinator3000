@@ -1,0 +1,715 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		4CC5649819A913FB006A16B8 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4CC5649719A913FB006A16B8 /* Foundation.framework */; };
+		4CC5649A19A913FB006A16B8 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4CC5649919A913FB006A16B8 /* CoreGraphics.framework */; };
+		4CC5649C19A913FB006A16B8 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4CC5649B19A913FB006A16B8 /* UIKit.framework */; };
+		4CC564A219A913FB006A16B8 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 4CC564A019A913FB006A16B8 /* InfoPlist.strings */; };
+		4CC564A419A913FB006A16B8 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 4CC564A319A913FB006A16B8 /* main.m */; };
+		4CC564A819A913FB006A16B8 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 4CC564A719A913FB006A16B8 /* AppDelegate.m */; };
+		4CC564AB19A913FB006A16B8 /* Main_iPhone.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4CC564A919A913FB006A16B8 /* Main_iPhone.storyboard */; };
+		4CC564AE19A913FB006A16B8 /* Main_iPad.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4CC564AC19A913FB006A16B8 /* Main_iPad.storyboard */; };
+		4CC564B119A913FB006A16B8 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4CC564B019A913FB006A16B8 /* ViewController.m */; };
+		4CC564B319A913FB006A16B8 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4CC564B219A913FB006A16B8 /* Images.xcassets */; };
+		4CC564BA19A913FB006A16B8 /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4CC564B919A913FB006A16B8 /* XCTest.framework */; };
+		4CC564BB19A913FB006A16B8 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4CC5649719A913FB006A16B8 /* Foundation.framework */; };
+		4CC564BC19A913FB006A16B8 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4CC5649B19A913FB006A16B8 /* UIKit.framework */; };
+		4CC564C419A913FB006A16B8 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 4CC564C219A913FB006A16B8 /* InfoPlist.strings */; };
+		4CC564C619A913FB006A16B8 /* SuperHeroTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 4CC564C519A913FB006A16B8 /* SuperHeroTests.m */; };
+		4CC564D919A91469006A16B8 /* BLEDevice.m in Sources */ = {isa = PBXBuildFile; fileRef = 4CC564D219A91469006A16B8 /* BLEDevice.m */; };
+		4CC564DA19A91469006A16B8 /* BLEUtility.m in Sources */ = {isa = PBXBuildFile; fileRef = 4CC564D419A91469006A16B8 /* BLEUtility.m */; };
+		4CC564DB19A91469006A16B8 /* DFBlunoDevice.m in Sources */ = {isa = PBXBuildFile; fileRef = 4CC564D619A91469006A16B8 /* DFBlunoDevice.m */; };
+		4CC564DC19A91469006A16B8 /* DFBlunoManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 4CC564D819A91469006A16B8 /* DFBlunoManager.m */; };
+		4CC564E219A9150D006A16B8 /* CellDeviceList.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4CC564DE19A9150D006A16B8 /* CellDeviceList.xib */; };
+		4CC564E319A9150D006A16B8 /* VCMain.m in Sources */ = {isa = PBXBuildFile; fileRef = 4CC564E019A9150D006A16B8 /* VCMain.m */; };
+		4CC564E419A9150D006A16B8 /* VCMain.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4CC564E119A9150D006A16B8 /* VCMain.xib */; };
+		4CC564ED19A92D4E006A16B8 /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4CC564EC19A92D4E006A16B8 /* AVFoundation.framework */; };
+		4CC564FA19A938E2006A16B8 /* bg.png in Resources */ = {isa = PBXBuildFile; fileRef = 4CC564F019A938E2006A16B8 /* bg.png */; };
+		4CC564FB19A938E2006A16B8 /* mic.png in Resources */ = {isa = PBXBuildFile; fileRef = 4CC564F119A938E2006A16B8 /* mic.png */; };
+		4CC564FC19A938E2006A16B8 /* SineWaveViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4CC564F319A938E2006A16B8 /* SineWaveViewController.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		4CC564FD19A938E2006A16B8 /* SineWaveViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4CC564F419A938E2006A16B8 /* SineWaveViewController.xib */; };
+		4CC564FE19A938E2006A16B8 /* SpeechToTextModule.m in Sources */ = {isa = PBXBuildFile; fileRef = 4CC564F619A938E2006A16B8 /* SpeechToTextModule.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		4CC564FF19A938E2006A16B8 /* Speex.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4CC564F719A938E2006A16B8 /* Speex.framework */; };
+		4CC5650019A938E3006A16B8 /* WaveDisplay.m in Sources */ = {isa = PBXBuildFile; fileRef = 4CC564F919A938E2006A16B8 /* WaveDisplay.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		4CC5651B19A97783006A16B8 /* libUnirest.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 4CC5651619A975CC006A16B8 /* libUnirest.a */; };
+		4CC5652219A9C2F5006A16B8 /* body.JPG in Resources */ = {isa = PBXBuildFile; fileRef = 4CC5651D19A9C2F5006A16B8 /* body.JPG */; };
+		4CC5652319A9C2F5006A16B8 /* boosters.png in Resources */ = {isa = PBXBuildFile; fileRef = 4CC5651E19A9C2F5006A16B8 /* boosters.png */; };
+		4CC5652419A9C2F5006A16B8 /* irCam.png in Resources */ = {isa = PBXBuildFile; fileRef = 4CC5651F19A9C2F5006A16B8 /* irCam.png */; };
+		4CC5652519A9C2F5006A16B8 /* magnetDetect.png in Resources */ = {isa = PBXBuildFile; fileRef = 4CC5652019A9C2F5006A16B8 /* magnetDetect.png */; };
+		4CC5652619A9C2F5006A16B8 /* redLaser.png in Resources */ = {isa = PBXBuildFile; fileRef = 4CC5652119A9C2F5006A16B8 /* redLaser.png */; };
+		4CC5652819A9C874006A16B8 /* nightvision.html in Resources */ = {isa = PBXBuildFile; fileRef = 4CC5652719A9C874006A16B8 /* nightvision.html */; };
+		4CC5652B19A9CC1D006A16B8 /* motionSense.png in Resources */ = {isa = PBXBuildFile; fileRef = 4CC5652919A9CC1D006A16B8 /* motionSense.png */; };
+		4CC5652C19A9CC1D006A16B8 /* blueLight.png in Resources */ = {isa = PBXBuildFile; fileRef = 4CC5652A19A9CC1D006A16B8 /* blueLight.png */; };
+		4CC5652F19AA5822006A16B8 /* blast_logo.png in Resources */ = {isa = PBXBuildFile; fileRef = 4CC5652E19AA5822006A16B8 /* blast_logo.png */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		4CC564BD19A913FB006A16B8 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 4CC5648C19A913FB006A16B8 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 4CC5649319A913FB006A16B8;
+			remoteInfo = SuperHero;
+		};
+		4CC5651519A975CC006A16B8 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 4CC5651019A975CC006A16B8 /* Unirest.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = A9E78BA916E9801F006B80FD;
+			remoteInfo = Unirest;
+		};
+		4CC5651719A975CC006A16B8 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 4CC5651019A975CC006A16B8 /* Unirest.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = A9E78BBA16E9801F006B80FD;
+			remoteInfo = UnirestTests;
+		};
+		4CC5651919A97773006A16B8 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 4CC5651019A975CC006A16B8 /* Unirest.xcodeproj */;
+			proxyType = 1;
+			remoteGlobalIDString = A9E78BA816E9801F006B80FD;
+			remoteInfo = Unirest;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		4CC5649419A913FB006A16B8 /* SuperHero.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SuperHero.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		4CC5649719A913FB006A16B8 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		4CC5649919A913FB006A16B8 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		4CC5649B19A913FB006A16B8 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		4CC5649F19A913FB006A16B8 /* SuperHero-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "SuperHero-Info.plist"; sourceTree = "<group>"; };
+		4CC564A119A913FB006A16B8 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		4CC564A319A913FB006A16B8 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		4CC564A519A913FB006A16B8 /* SuperHero-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "SuperHero-Prefix.pch"; sourceTree = "<group>"; };
+		4CC564A619A913FB006A16B8 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		4CC564A719A913FB006A16B8 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		4CC564AA19A913FB006A16B8 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main_iPhone.storyboard; sourceTree = "<group>"; };
+		4CC564AD19A913FB006A16B8 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main_iPad.storyboard; sourceTree = "<group>"; };
+		4CC564AF19A913FB006A16B8 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		4CC564B019A913FB006A16B8 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		4CC564B219A913FB006A16B8 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		4CC564B819A913FB006A16B8 /* SuperHeroTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SuperHeroTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		4CC564B919A913FB006A16B8 /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
+		4CC564C119A913FB006A16B8 /* SuperHeroTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "SuperHeroTests-Info.plist"; sourceTree = "<group>"; };
+		4CC564C319A913FB006A16B8 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		4CC564C519A913FB006A16B8 /* SuperHeroTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SuperHeroTests.m; sourceTree = "<group>"; };
+		4CC564D119A91469006A16B8 /* BLEDevice.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BLEDevice.h; sourceTree = "<group>"; };
+		4CC564D219A91469006A16B8 /* BLEDevice.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BLEDevice.m; sourceTree = "<group>"; };
+		4CC564D319A91469006A16B8 /* BLEUtility.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BLEUtility.h; sourceTree = "<group>"; };
+		4CC564D419A91469006A16B8 /* BLEUtility.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BLEUtility.m; sourceTree = "<group>"; };
+		4CC564D519A91469006A16B8 /* DFBlunoDevice.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DFBlunoDevice.h; sourceTree = "<group>"; };
+		4CC564D619A91469006A16B8 /* DFBlunoDevice.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DFBlunoDevice.m; sourceTree = "<group>"; };
+		4CC564D719A91469006A16B8 /* DFBlunoManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DFBlunoManager.h; sourceTree = "<group>"; };
+		4CC564D819A91469006A16B8 /* DFBlunoManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DFBlunoManager.m; sourceTree = "<group>"; };
+		4CC564DE19A9150D006A16B8 /* CellDeviceList.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CellDeviceList.xib; sourceTree = "<group>"; };
+		4CC564DF19A9150D006A16B8 /* VCMain.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VCMain.h; sourceTree = "<group>"; };
+		4CC564E019A9150D006A16B8 /* VCMain.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VCMain.m; sourceTree = "<group>"; };
+		4CC564E119A9150D006A16B8 /* VCMain.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = VCMain.xib; sourceTree = "<group>"; };
+		4CC564EC19A92D4E006A16B8 /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
+		4CC564F019A938E2006A16B8 /* bg.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = bg.png; sourceTree = "<group>"; };
+		4CC564F119A938E2006A16B8 /* mic.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = mic.png; sourceTree = "<group>"; };
+		4CC564F219A938E2006A16B8 /* SineWaveViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SineWaveViewController.h; sourceTree = "<group>"; };
+		4CC564F319A938E2006A16B8 /* SineWaveViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SineWaveViewController.m; sourceTree = "<group>"; };
+		4CC564F419A938E2006A16B8 /* SineWaveViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SineWaveViewController.xib; sourceTree = "<group>"; };
+		4CC564F519A938E2006A16B8 /* SpeechToTextModule.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SpeechToTextModule.h; sourceTree = "<group>"; };
+		4CC564F619A938E2006A16B8 /* SpeechToTextModule.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SpeechToTextModule.m; sourceTree = "<group>"; };
+		4CC564F719A938E2006A16B8 /* Speex.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Speex.framework; sourceTree = "<group>"; };
+		4CC564F819A938E2006A16B8 /* WaveDisplay.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WaveDisplay.h; sourceTree = "<group>"; };
+		4CC564F919A938E2006A16B8 /* WaveDisplay.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WaveDisplay.m; sourceTree = "<group>"; };
+		4CC5651019A975CC006A16B8 /* Unirest.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = Unirest.xcodeproj; path = unirest/Unirest.xcodeproj; sourceTree = "<group>"; };
+		4CC5651D19A9C2F5006A16B8 /* body.JPG */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = body.JPG; sourceTree = "<group>"; };
+		4CC5651E19A9C2F5006A16B8 /* boosters.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = boosters.png; sourceTree = "<group>"; };
+		4CC5651F19A9C2F5006A16B8 /* irCam.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = irCam.png; sourceTree = "<group>"; };
+		4CC5652019A9C2F5006A16B8 /* magnetDetect.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = magnetDetect.png; sourceTree = "<group>"; };
+		4CC5652119A9C2F5006A16B8 /* redLaser.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = redLaser.png; sourceTree = "<group>"; };
+		4CC5652719A9C874006A16B8 /* nightvision.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = nightvision.html; sourceTree = "<group>"; };
+		4CC5652919A9CC1D006A16B8 /* motionSense.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = motionSense.png; sourceTree = "<group>"; };
+		4CC5652A19A9CC1D006A16B8 /* blueLight.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = blueLight.png; sourceTree = "<group>"; };
+		4CC5652E19AA5822006A16B8 /* blast_logo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = blast_logo.png; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		4CC5649119A913FB006A16B8 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4CC5651B19A97783006A16B8 /* libUnirest.a in Frameworks */,
+				4CC564ED19A92D4E006A16B8 /* AVFoundation.framework in Frameworks */,
+				4CC564FF19A938E2006A16B8 /* Speex.framework in Frameworks */,
+				4CC5649A19A913FB006A16B8 /* CoreGraphics.framework in Frameworks */,
+				4CC5649C19A913FB006A16B8 /* UIKit.framework in Frameworks */,
+				4CC5649819A913FB006A16B8 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4CC564B519A913FB006A16B8 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4CC564BA19A913FB006A16B8 /* XCTest.framework in Frameworks */,
+				4CC564BC19A913FB006A16B8 /* UIKit.framework in Frameworks */,
+				4CC564BB19A913FB006A16B8 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		4CC5648B19A913FB006A16B8 = {
+			isa = PBXGroup;
+			children = (
+				4CC5649D19A913FB006A16B8 /* SuperHero */,
+				4CC564BF19A913FB006A16B8 /* SuperHeroTests */,
+				4CC5649619A913FB006A16B8 /* Frameworks */,
+				4CC5649519A913FB006A16B8 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		4CC5649519A913FB006A16B8 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				4CC5649419A913FB006A16B8 /* SuperHero.app */,
+				4CC564B819A913FB006A16B8 /* SuperHeroTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		4CC5649619A913FB006A16B8 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				4CC564EC19A92D4E006A16B8 /* AVFoundation.framework */,
+				4CC5649719A913FB006A16B8 /* Foundation.framework */,
+				4CC5649919A913FB006A16B8 /* CoreGraphics.framework */,
+				4CC5649B19A913FB006A16B8 /* UIKit.framework */,
+				4CC564B919A913FB006A16B8 /* XCTest.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		4CC5649D19A913FB006A16B8 /* SuperHero */ = {
+			isa = PBXGroup;
+			children = (
+				4CC5652719A9C874006A16B8 /* nightvision.html */,
+				4CC5651C19A9C2F5006A16B8 /* images */,
+				4CC5651019A975CC006A16B8 /* Unirest.xcodeproj */,
+				4CC564EF19A938E2006A16B8 /* SpeechToText */,
+				4CC564DD19A9150D006A16B8 /* Classes */,
+				4CC564CF19A91469006A16B8 /* Bluno */,
+				4CC564A619A913FB006A16B8 /* AppDelegate.h */,
+				4CC564A719A913FB006A16B8 /* AppDelegate.m */,
+				4CC564A919A913FB006A16B8 /* Main_iPhone.storyboard */,
+				4CC564AC19A913FB006A16B8 /* Main_iPad.storyboard */,
+				4CC564AF19A913FB006A16B8 /* ViewController.h */,
+				4CC564B019A913FB006A16B8 /* ViewController.m */,
+				4CC564B219A913FB006A16B8 /* Images.xcassets */,
+				4CC5649E19A913FB006A16B8 /* Supporting Files */,
+			);
+			path = SuperHero;
+			sourceTree = "<group>";
+		};
+		4CC5649E19A913FB006A16B8 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				4CC5649F19A913FB006A16B8 /* SuperHero-Info.plist */,
+				4CC564A019A913FB006A16B8 /* InfoPlist.strings */,
+				4CC564A319A913FB006A16B8 /* main.m */,
+				4CC564A519A913FB006A16B8 /* SuperHero-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		4CC564BF19A913FB006A16B8 /* SuperHeroTests */ = {
+			isa = PBXGroup;
+			children = (
+				4CC564C519A913FB006A16B8 /* SuperHeroTests.m */,
+				4CC564C019A913FB006A16B8 /* Supporting Files */,
+			);
+			path = SuperHeroTests;
+			sourceTree = "<group>";
+		};
+		4CC564C019A913FB006A16B8 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				4CC564C119A913FB006A16B8 /* SuperHeroTests-Info.plist */,
+				4CC564C219A913FB006A16B8 /* InfoPlist.strings */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		4CC564CF19A91469006A16B8 /* Bluno */ = {
+			isa = PBXGroup;
+			children = (
+				4CC564D019A91469006A16B8 /* Core */,
+				4CC564D519A91469006A16B8 /* DFBlunoDevice.h */,
+				4CC564D619A91469006A16B8 /* DFBlunoDevice.m */,
+				4CC564D719A91469006A16B8 /* DFBlunoManager.h */,
+				4CC564D819A91469006A16B8 /* DFBlunoManager.m */,
+			);
+			path = Bluno;
+			sourceTree = "<group>";
+		};
+		4CC564D019A91469006A16B8 /* Core */ = {
+			isa = PBXGroup;
+			children = (
+				4CC564D119A91469006A16B8 /* BLEDevice.h */,
+				4CC564D219A91469006A16B8 /* BLEDevice.m */,
+				4CC564D319A91469006A16B8 /* BLEUtility.h */,
+				4CC564D419A91469006A16B8 /* BLEUtility.m */,
+			);
+			path = Core;
+			sourceTree = "<group>";
+		};
+		4CC564DD19A9150D006A16B8 /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				4CC564DE19A9150D006A16B8 /* CellDeviceList.xib */,
+				4CC564DF19A9150D006A16B8 /* VCMain.h */,
+				4CC564E019A9150D006A16B8 /* VCMain.m */,
+				4CC564E119A9150D006A16B8 /* VCMain.xib */,
+			);
+			path = Classes;
+			sourceTree = "<group>";
+		};
+		4CC564EF19A938E2006A16B8 /* SpeechToText */ = {
+			isa = PBXGroup;
+			children = (
+				4CC564F019A938E2006A16B8 /* bg.png */,
+				4CC564F119A938E2006A16B8 /* mic.png */,
+				4CC564F219A938E2006A16B8 /* SineWaveViewController.h */,
+				4CC564F319A938E2006A16B8 /* SineWaveViewController.m */,
+				4CC564F419A938E2006A16B8 /* SineWaveViewController.xib */,
+				4CC564F519A938E2006A16B8 /* SpeechToTextModule.h */,
+				4CC564F619A938E2006A16B8 /* SpeechToTextModule.m */,
+				4CC564F719A938E2006A16B8 /* Speex.framework */,
+				4CC564F819A938E2006A16B8 /* WaveDisplay.h */,
+				4CC564F919A938E2006A16B8 /* WaveDisplay.m */,
+			);
+			path = SpeechToText;
+			sourceTree = "<group>";
+		};
+		4CC5651119A975CC006A16B8 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				4CC5651619A975CC006A16B8 /* libUnirest.a */,
+				4CC5651819A975CC006A16B8 /* UnirestTests.octest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		4CC5651C19A9C2F5006A16B8 /* images */ = {
+			isa = PBXGroup;
+			children = (
+				4CC5652E19AA5822006A16B8 /* blast_logo.png */,
+				4CC5652919A9CC1D006A16B8 /* motionSense.png */,
+				4CC5652A19A9CC1D006A16B8 /* blueLight.png */,
+				4CC5651D19A9C2F5006A16B8 /* body.JPG */,
+				4CC5651E19A9C2F5006A16B8 /* boosters.png */,
+				4CC5651F19A9C2F5006A16B8 /* irCam.png */,
+				4CC5652019A9C2F5006A16B8 /* magnetDetect.png */,
+				4CC5652119A9C2F5006A16B8 /* redLaser.png */,
+			);
+			path = images;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		4CC5649319A913FB006A16B8 /* SuperHero */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 4CC564C919A913FB006A16B8 /* Build configuration list for PBXNativeTarget "SuperHero" */;
+			buildPhases = (
+				4CC5649019A913FB006A16B8 /* Sources */,
+				4CC5649119A913FB006A16B8 /* Frameworks */,
+				4CC5649219A913FB006A16B8 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				4CC5651A19A97773006A16B8 /* PBXTargetDependency */,
+			);
+			name = SuperHero;
+			productName = SuperHero;
+			productReference = 4CC5649419A913FB006A16B8 /* SuperHero.app */;
+			productType = "com.apple.product-type.application";
+		};
+		4CC564B719A913FB006A16B8 /* SuperHeroTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 4CC564CC19A913FB006A16B8 /* Build configuration list for PBXNativeTarget "SuperHeroTests" */;
+			buildPhases = (
+				4CC564B419A913FB006A16B8 /* Sources */,
+				4CC564B519A913FB006A16B8 /* Frameworks */,
+				4CC564B619A913FB006A16B8 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				4CC564BE19A913FB006A16B8 /* PBXTargetDependency */,
+			);
+			name = SuperHeroTests;
+			productName = SuperHeroTests;
+			productReference = 4CC564B819A913FB006A16B8 /* SuperHeroTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		4CC5648C19A913FB006A16B8 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0510;
+				ORGANIZATIONNAME = "blast buzz";
+				TargetAttributes = {
+					4CC5649319A913FB006A16B8 = {
+						DevelopmentTeam = 7ZSKPDPWTM;
+					};
+					4CC564B719A913FB006A16B8 = {
+						TestTargetID = 4CC5649319A913FB006A16B8;
+					};
+				};
+			};
+			buildConfigurationList = 4CC5648F19A913FB006A16B8 /* Build configuration list for PBXProject "SuperHero" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 4CC5648B19A913FB006A16B8;
+			productRefGroup = 4CC5649519A913FB006A16B8 /* Products */;
+			projectDirPath = "";
+			projectReferences = (
+				{
+					ProductGroup = 4CC5651119A975CC006A16B8 /* Products */;
+					ProjectRef = 4CC5651019A975CC006A16B8 /* Unirest.xcodeproj */;
+				},
+			);
+			projectRoot = "";
+			targets = (
+				4CC5649319A913FB006A16B8 /* SuperHero */,
+				4CC564B719A913FB006A16B8 /* SuperHeroTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXReferenceProxy section */
+		4CC5651619A975CC006A16B8 /* libUnirest.a */ = {
+			isa = PBXReferenceProxy;
+			fileType = archive.ar;
+			path = libUnirest.a;
+			remoteRef = 4CC5651519A975CC006A16B8 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		4CC5651819A975CC006A16B8 /* UnirestTests.octest */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.cfbundle;
+			path = UnirestTests.octest;
+			remoteRef = 4CC5651719A975CC006A16B8 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+/* End PBXReferenceProxy section */
+
+/* Begin PBXResourcesBuildPhase section */
+		4CC5649219A913FB006A16B8 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4CC564FB19A938E2006A16B8 /* mic.png in Resources */,
+				4CC564AE19A913FB006A16B8 /* Main_iPad.storyboard in Resources */,
+				4CC564E419A9150D006A16B8 /* VCMain.xib in Resources */,
+				4CC5652219A9C2F5006A16B8 /* body.JPG in Resources */,
+				4CC5652C19A9CC1D006A16B8 /* blueLight.png in Resources */,
+				4CC564FA19A938E2006A16B8 /* bg.png in Resources */,
+				4CC564B319A913FB006A16B8 /* Images.xcassets in Resources */,
+				4CC5652F19AA5822006A16B8 /* blast_logo.png in Resources */,
+				4CC5652B19A9CC1D006A16B8 /* motionSense.png in Resources */,
+				4CC564E219A9150D006A16B8 /* CellDeviceList.xib in Resources */,
+				4CC564FD19A938E2006A16B8 /* SineWaveViewController.xib in Resources */,
+				4CC5652419A9C2F5006A16B8 /* irCam.png in Resources */,
+				4CC5652619A9C2F5006A16B8 /* redLaser.png in Resources */,
+				4CC5652319A9C2F5006A16B8 /* boosters.png in Resources */,
+				4CC564AB19A913FB006A16B8 /* Main_iPhone.storyboard in Resources */,
+				4CC5652519A9C2F5006A16B8 /* magnetDetect.png in Resources */,
+				4CC564A219A913FB006A16B8 /* InfoPlist.strings in Resources */,
+				4CC5652819A9C874006A16B8 /* nightvision.html in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4CC564B619A913FB006A16B8 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4CC564C419A913FB006A16B8 /* InfoPlist.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		4CC5649019A913FB006A16B8 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4CC564DA19A91469006A16B8 /* BLEUtility.m in Sources */,
+				4CC564FC19A938E2006A16B8 /* SineWaveViewController.m in Sources */,
+				4CC564E319A9150D006A16B8 /* VCMain.m in Sources */,
+				4CC564B119A913FB006A16B8 /* ViewController.m in Sources */,
+				4CC564DB19A91469006A16B8 /* DFBlunoDevice.m in Sources */,
+				4CC564D919A91469006A16B8 /* BLEDevice.m in Sources */,
+				4CC564FE19A938E2006A16B8 /* SpeechToTextModule.m in Sources */,
+				4CC564DC19A91469006A16B8 /* DFBlunoManager.m in Sources */,
+				4CC5650019A938E3006A16B8 /* WaveDisplay.m in Sources */,
+				4CC564A819A913FB006A16B8 /* AppDelegate.m in Sources */,
+				4CC564A419A913FB006A16B8 /* main.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4CC564B419A913FB006A16B8 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4CC564C619A913FB006A16B8 /* SuperHeroTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		4CC564BE19A913FB006A16B8 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 4CC5649319A913FB006A16B8 /* SuperHero */;
+			targetProxy = 4CC564BD19A913FB006A16B8 /* PBXContainerItemProxy */;
+		};
+		4CC5651A19A97773006A16B8 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = Unirest;
+			targetProxy = 4CC5651919A97773006A16B8 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		4CC564A019A913FB006A16B8 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				4CC564A119A913FB006A16B8 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		4CC564A919A913FB006A16B8 /* Main_iPhone.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				4CC564AA19A913FB006A16B8 /* Base */,
+			);
+			name = Main_iPhone.storyboard;
+			sourceTree = "<group>";
+		};
+		4CC564AC19A913FB006A16B8 /* Main_iPad.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				4CC564AD19A913FB006A16B8 /* Base */,
+			);
+			name = Main_iPad.storyboard;
+			sourceTree = "<group>";
+		};
+		4CC564C219A913FB006A16B8 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				4CC564C319A913FB006A16B8 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		4CC564C719A913FB006A16B8 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		4CC564C819A913FB006A16B8 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		4CC564CA19A913FB006A16B8 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/SuperHero/SpeechToText",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "SuperHero/SuperHero-Prefix.pch";
+				INFOPLIST_FILE = "SuperHero/SuperHero-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		4CC564CB19A913FB006A16B8 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/SuperHero/SpeechToText",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "SuperHero/SuperHero-Prefix.pch";
+				INFOPLIST_FILE = "SuperHero/SuperHero-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+		4CC564CD19A913FB006A16B8 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/SuperHero.app/SuperHero";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "SuperHero/SuperHero-Prefix.pch";
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = "SuperHeroTests/SuperHeroTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Debug;
+		};
+		4CC564CE19A913FB006A16B8 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/SuperHero.app/SuperHero";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "SuperHero/SuperHero-Prefix.pch";
+				INFOPLIST_FILE = "SuperHeroTests/SuperHeroTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		4CC5648F19A913FB006A16B8 /* Build configuration list for PBXProject "SuperHero" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				4CC564C719A913FB006A16B8 /* Debug */,
+				4CC564C819A913FB006A16B8 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		4CC564C919A913FB006A16B8 /* Build configuration list for PBXNativeTarget "SuperHero" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				4CC564CA19A913FB006A16B8 /* Debug */,
+				4CC564CB19A913FB006A16B8 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		4CC564CC19A913FB006A16B8 /* Build configuration list for PBXNativeTarget "SuperHeroTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				4CC564CD19A913FB006A16B8 /* Debug */,
+				4CC564CE19A913FB006A16B8 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 4CC5648C19A913FB006A16B8 /* Project object */;
+}

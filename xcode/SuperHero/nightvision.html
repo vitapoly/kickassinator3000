@@ -1,0 +1,54 @@
+<head>
+<style>
+.wrap
+{
+	overflow: hidden;
+	margin: 0 auto;
+	
+}
+
+.tint {
+
+  position: relative;
+  float: left;
+
+}
+
+.tint:before {
+  content: "";
+  display: block;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: rgba(0,255,0, 0.5);
+  transition: all .3s linear;
+}
+
+</style>
+
+<script>
+setInterval("reloadCamera()", 5000);
+
+function reloadCamera()
+{
+	console.log("reloading camera");
+	document.getElementById("camera").src="http://192.168.43.200:88/cgi-bin/CGIProxy.fcgi?cmd=snapPicture2&usr=super&pwd=hero&rand="+Math.random();
+}
+
+
+
+</script>
+
+</head>
+
+<div class="wrap">
+<figure class="tint">
+	<img id="camera" src="http://192.168.43.200:88/cgi-bin/CGIProxy.fcgi?cmd=snapPicture2&usr=super&pwd=hero">
+</figure>
+</div>
+
+<section class="nightvision">
+</section>
+
